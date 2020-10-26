@@ -10,13 +10,13 @@ namespace Travel.Models
     {
     }
     public DbSet<Review> Reviews { get; set; }
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-      DateTime today = DateTime.Now;
-      builder.Entity<Review>()
-          .HasData(
-          new Review { Country = "USA", City = "Seattle", Details = "A City in the Pacific Northwest surrounded by hills and trees.", Rating = 4, Visited = today, UserName = "mmanchee" }
-          );
-    }
+    // protected override void OnModelCreating(ModelBuilder builder)
+    // {
+    //   DateTime today = DateTime.Now;
+    //   builder.Entity<Review>()
+    //       .HasData(
+    //       new Review { Country = "USA", City = "Seattle", Details = "A City in the Pacific Northwest surrounded by hills and trees.", Rating = 4, Visited = today, UserName = "mmanchee" }
+    //       );
+    // }
   }
 }

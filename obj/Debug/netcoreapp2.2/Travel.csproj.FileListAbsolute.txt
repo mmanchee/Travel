@@ -4,3 +4,11 @@ C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorAssemblyInfo.cs
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.AssemblyInfoInputs.cache
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.AssemblyInfo.cs
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.deps.json
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.runtimeconfig.json
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.runtimeconfig.dev.json
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.dll
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.pdb
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorTargetAssemblyInfo.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.dll
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.pdb
