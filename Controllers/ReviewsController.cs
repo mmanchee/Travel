@@ -65,5 +65,18 @@ namespace Travel.Controllers
       _db.Reviews.Remove(ReviewToDelete);
       _db.SaveChanges();
     }
+    // Top Rated
+    [HttpGet]
+    public ActionResult TopRated()
+    {
+      var query = from review in _db.Reviews
+            group review by review.City into cities
+            select new
+            {
+                  City = cities.Key,
+                  Average = cities.Average(x => x.Rating)
+            };
+      return query;
+    }
   }
 }
