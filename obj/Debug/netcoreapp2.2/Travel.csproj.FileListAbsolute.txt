@@ -1,0 +1,6 @@
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.csprojAssemblyReference.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.csproj.CoreCompileInputs.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorAssemblyInfo.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorAssemblyInfo.cs
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.AssemblyInfoInputs.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.AssemblyInfo.cs
