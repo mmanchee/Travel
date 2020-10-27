@@ -84,12 +84,13 @@ Main Programs
 
 
 ### Other Links
+
 [Mike's GitHub](https://github.com/mmanchee)
 [LinkedIn](https://www.linkedin.com/in/mikemanchee/)
 [Garrett's GitHub](https://github.com/garrett-brown-dev/)
 [LinkedIn](https://www.linkedin.com/in/garrett-brown-d/)
 
 ### License
-
+![GitHub](img/Github.png)
 Copyright (c) 2020 **_{Mike Manchee}_**, **_{Garrett Brown}_**
 Licensed under MIT

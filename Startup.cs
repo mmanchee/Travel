@@ -31,15 +31,6 @@ namespace Travel
       {
       c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
       });
-      services.AddCors(options =>
-        {
-          options.AddPolicy(MyAllowSpecificOrigins,
-          builder =>
-          {
-            builder.WithOrigins("http://example.com",
-                                    "http://www.contoso.com");
-            });
-        });
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,9 +52,15 @@ namespace Travel
       {
       c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
       });
-       app.UseCors(MyAllowSpecificOrigins); 
-      //   .UseHttpsRedirection(););
+          // Shows UseCors with CorsPolicyBuilder.
+      app.UseCors(builder =>
+    {
+        builder.WithOrigins("http://example.com",
+                            "http://www.contoso.com",
+                            "https://localhost:44375",
+                            "https://localhost:5001");
       app.UseMvc();
-    }
+    });
   }
+}
 }

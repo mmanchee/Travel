@@ -20,7 +20,7 @@ namespace Travel.Controllers
 
     // GET api/Reviews
     [HttpGet]
-    public ActionResult<IEnumerable<Review>> Get(string country, string city)
+    public ActionResult<IEnumerable<Review>> Get(string country, string city, int startIndex, int pageSize)
     {
       var query = _db.Reviews.AsQueryable();
       if (country != null)
@@ -31,6 +31,7 @@ namespace Travel.Controllers
       {
         query = query.Where(entry => entry.City == city);
       }
+      query = query.Skip(startIndex).Take(pageSize); // Pagination using passed variables int startIndex, int pageSize
       return query.ToList();
     }
 
