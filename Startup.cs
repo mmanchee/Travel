@@ -57,8 +57,8 @@ namespace Travel
     {
         builder.WithOrigins("http://example.com",
                             "http://www.contoso.com",
-                            "https://localhost:44375",
-                            "https://localhost:5001");
+                            "https://localhost:6000",
+                            "https://localhost:6001");
       app.UseMvc();
     });
   }
