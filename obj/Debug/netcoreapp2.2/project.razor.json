@@ -1870,6 +1870,12 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "Travel",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

@@ -12,3 +12,12 @@ C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorTargetAssemblyInfo.cache
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.dll
 C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.pdb
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.Views.dll
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\bin\Debug\netcoreapp2.2\Travel.Views.pdb
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.TagHelpers.input.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.TagHelpers.output.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorCoreGenerate.cache
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Razor\Views\Index.g.cshtml.cs
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.RazorTargetAssemblyInfo.cs
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.Views.pdb
+C:\Users\mikem\Desktop\coding-practice\Week-13\Travel.Solution\Travel\obj\Debug\netcoreapp2.2\Travel.csproj.CopyComplete

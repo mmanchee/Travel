@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace Travel.Controllers
 {
@@ -11,6 +12,7 @@ namespace Travel.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
+        [EnableCors("AnotherPolicy")]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -18,6 +20,7 @@ namespace Travel.Controllers
         }
 
         // GET api/values/5
+        [EnableCors]        // Default policy.
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {

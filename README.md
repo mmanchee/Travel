@@ -57,6 +57,8 @@ As a user, I want to look up random destinations just for fun.
   * Type "dotnet ef migrations add Initial" and wait for migration file to be built
   * Type "dotnet ef database update" and wait for build confirmation
 
+### API Second Application
+* this dotnet run works with http://localhost:6000; http://localhost:6001
 ### Swagger
 * Type "dotnet watch run"
 * Paste URL in browser "http://localhost:5000/swagger/index.html"
@@ -84,13 +86,13 @@ Main Programs
 
 
 ### Other Links
-
-[Mike's GitHub](https://github.com/mmanchee)
-[LinkedIn](https://www.linkedin.com/in/mikemanchee/)
-[Garrett's GitHub](https://github.com/garrett-brown-dev/)
+![GitHub](img/Github.png)
+[Mike's GitHub](https://github.com/mmanchee)<br />
+[LinkedIn](https://www.linkedin.com/in/mikemanchee/)<br />
+[Garrett's GitHub](https://github.com/garrett-brown-dev/)<br />
 [LinkedIn](https://www.linkedin.com/in/garrett-brown-d/)
 
 ### License
-![GitHub](img/Github.png)
+
 Copyright (c) 2020 **_{Mike Manchee}_**, **_{Garrett Brown}_**
 Licensed under MIT
