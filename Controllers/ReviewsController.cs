@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -50,33 +51,48 @@ namespace Travel.Controllers
 
     // PUT api/Reviews/5
     [HttpPut("{id}")]
-    public void Put(int id, [FromBody] Review review)
+    public void Put(int id, [FromBody] Review review, string UserName)
     {
-      review.ReviewId = id;
-      _db.Entry(review).State = EntityState.Modified;
-      _db.SaveChanges();
+      if(UserName == "0"/*UserId*/) // Needs to be intigrated with ApplicationUser for Identity
+      {
+        review.ReviewId = id;
+        _db.Entry(review).State = EntityState.Modified;
+        _db.SaveChanges();
+      }
     }
 
     // DELETE api/Reviews/5
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public void Delete(int id, string UserName)
     {
+      if(UserName == "0"/*UserId*/) // Needs to be intigrated with ApplicationUser for Identity
+      {
       var ReviewToDelete = _db.Reviews.FirstOrDefault(entry => entry.ReviewId == id);
       _db.Reviews.Remove(ReviewToDelete);
       _db.SaveChanges();
+      }
     }
     // Top Rated
-    [HttpGet]
-    public ActionResult TopRated()
+    [HttpGet("TopRated")]
+    public IEnumerable<object> TopRated()
     {
       var query = from review in _db.Reviews
             group review by review.City into cities
-            select new
+            select new 
             {
                   City = cities.Key,
-                  Average = cities.Average(x => x.Rating)
+                  Average = (decimal)cities.Average(x => x.Rating)
             };
-      return query;
+            query = query.OrderByDescending(x => x.Average).Take(5);
+      return query.ToList();
+    }
+    [HttpGet("Random")]
+    public IEnumerable<Review> Random()
+    {
+      var count = _db.Reviews.Count();
+      Random ran = new Random();
+      int skipTo = ran.Next(count);
+      return _db.Reviews.OrderBy(r => Guid.NewGuid()).Skip(skipTo).Take(1);
     }
   }
 }
