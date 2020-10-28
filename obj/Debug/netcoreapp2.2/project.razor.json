@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\Travel.csproj",
+  "FilePath": "c:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\TravelAPI.Solution\\TravelAPI\\TravelAPI.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -1869,13 +1869,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "Travel",
-  "Documents": [
-    {
-      "FilePath": "c:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "RootNamespace": null,
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
