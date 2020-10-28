@@ -2,19 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Travel.Models;
+using TravelAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Travel.Controllers
+namespace TravelAPI.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
   public class ReviewsController : ControllerBase
   {
-    private TravelContext _db;
+    private TravelAPIContext _db;
 
-    public ReviewsController(TravelContext db)
+    public ReviewsController(TravelAPIContext db)
     {
       _db = db;
     }

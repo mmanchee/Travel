@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Travel.Models;
+using TravelAPI.Models;
 
-namespace Travel.Migrations
+namespace TravelAPI.Migrations
 {
-    [DbContext(typeof(TravelContext))]
-    [Migration("20201027182602_SeedData2")]
-    partial class SeedData2
+    [DbContext(typeof(TravelAPIContext))]
+    [Migration("20201028182203_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,7 @@ namespace Travel.Migrations
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Travel.Models.Review", b =>
+            modelBuilder.Entity("TravelAPI.Models.Review", b =>
                 {
                     b.Property<int>("ReviewId")
                         .ValueGeneratedOnAdd();
@@ -49,7 +49,7 @@ namespace Travel.Migrations
                             Details = "A City in the Pacific Northwest surrounded by hills and trees.",
                             Rating = 4,
                             UserName = "mmanchee",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -59,7 +59,7 @@ namespace Travel.Migrations
                             Details = "A City in northern Europe. Sweden's Capitol.",
                             Rating = 5,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -69,7 +69,7 @@ namespace Travel.Migrations
                             Details = "Canada's most populated city, located just beyond the border near Detroit.",
                             Rating = 4,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace Travel.Migrations
                             Details = "A city in China that neighbors Hong-Kong just on the other side of the river.",
                             Rating = 4,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -89,7 +89,7 @@ namespace Travel.Migrations
                             Details = "Located in the middle of the Pacific near the equator. This coast city sits right on white sand beaches with Diamond Head Mt. at the far south",
                             Rating = 5,
                             UserName = "mmanchee",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -99,7 +99,7 @@ namespace Travel.Migrations
                             Details = "A City in the Pacific Northwest surrounded by hills and trees.",
                             Rating = 1,
                             UserName = "mmanchee",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -109,7 +109,7 @@ namespace Travel.Migrations
                             Details = "A City in northern Europe. Sweden's Capitol.",
                             Rating = 2,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -119,7 +119,7 @@ namespace Travel.Migrations
                             Details = "Canada's most populated city, located just beyond the border near Detroit.",
                             Rating = 1,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -129,7 +129,7 @@ namespace Travel.Migrations
                             Details = "A city in China that neighbors Hong-Kong just on the other side of the river.",
                             Rating = 2,
                             UserName = "gbrown",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         },
                         new
                         {
@@ -139,7 +139,7 @@ namespace Travel.Migrations
                             Details = "Located in the middle of the Pacific near the equator. This coast city sits right on white sand beaches with Diamond Head Mt. at the far south",
                             Rating = 2,
                             UserName = "mmanchee",
-                            Visited = new DateTime(2020, 10, 27, 11, 26, 1, 975, DateTimeKind.Local).AddTicks(3741)
+                            Visited = new DateTime(2020, 10, 28, 11, 22, 3, 730, DateTimeKind.Local).AddTicks(8749)
                         });
                 });
 #pragma warning restore 612, 618

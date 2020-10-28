@@ -1,4 +1,4 @@
-# _Travel Reviewer_
+# _Travel Review API_
 
 #### _C# API Project for Epicodus, October 26rd, 2020_
 
@@ -38,7 +38,7 @@ As a user, I want to look up random destinations just for fun.
   * Type "dotnet restore" to get bin and obj files
   * Type "dotnet run" in GitBash to run the program
   * Add database per the instructions below.
-  * Have fun with Travel Review <!-- TITLE HERE -->
+  * Have fun with Travel Review API<!-- TITLE HERE -->
 
 * Cloning options
   * For cloning please use the following GitHub [tutorial](https://docs.github.com/en/enterprise/2.16/user/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
@@ -47,7 +47,7 @@ As a user, I want to look up random destinations just for fun.
   * Type "dotnet restore" to get bin and obj files
   * Type "dotnet run" in GitBash to run the program
   * Add database per the instructions below.
-  * Have fun with Travel Review <!-- TITLE HERE -->
+  * Have fun with Travel Review API<!-- TITLE HERE -->
 
 ### Database Setup
 * Go to appsettings.json and change the password if needed.

@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Travel.Models
+namespace TravelAPI.Models
 {
-  public class TravelContext : DbContext
+  public class TravelAPIContext : DbContext
   {
-    public TravelContext(DbContextOptions<TravelContext> options)
+    public TravelAPIContext(DbContextOptions<TravelAPIContext> options)
         : base(options)
     {
     }

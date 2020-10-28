@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 // using Microsoft.AspNetCore.Cors;
 
-namespace Travel.Controllers
+namespace TravelAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

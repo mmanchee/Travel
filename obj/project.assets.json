@@ -12409,11 +12409,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\Travel.csproj",
-      "projectName": "Travel",
-      "projectPath": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\Travel.csproj",
+      "projectUniqueName": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\TravelAPI.Solution\\TravelAPI\\TravelAPI.csproj",
+      "projectName": "TravelAPI",
+      "projectPath": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\TravelAPI.Solution\\TravelAPI\\TravelAPI.csproj",
       "packagesPath": "C:\\Users\\mikem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\Travel.Solution\\Travel\\obj\\",
+      "outputPath": "C:\\Users\\mikem\\Desktop\\coding-practice\\Week-13\\TravelAPI.Solution\\TravelAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

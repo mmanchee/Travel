@@ -1,6 +1,6 @@
 using System;
 
-namespace Travel.Models
+namespace TravelAPI.Models
 {
   public class Review
   {

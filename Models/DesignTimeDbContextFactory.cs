@@ -3,24 +3,24 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Travel.Models
+namespace TravelAPI.Models
 {
-  public class TravelContextFactory : IDesignTimeDbContextFactory<TravelContext>
+  public class TravelAPIContextFactory : IDesignTimeDbContextFactory<TravelAPIContext>
   {
 
-    TravelContext IDesignTimeDbContextFactory<TravelContext>.CreateDbContext(string[] args)
+    TravelAPIContext IDesignTimeDbContextFactory<TravelAPIContext>.CreateDbContext(string[] args)
     {
       IConfigurationRoot configuration = new ConfigurationBuilder()
           .SetBasePath(Directory.GetCurrentDirectory())
           .AddJsonFile("appsettings.json")
           .Build();
 
-      var builder = new DbContextOptionsBuilder<TravelContext>();
+      var builder = new DbContextOptionsBuilder<TravelAPIContext>();
       var connectionString = configuration.GetConnectionString("DefaultConnection");
 
       builder.UseMySql(connectionString);
 
-      return new TravelContext(builder.Options);
+      return new TravelAPIContext(builder.Options);
     }
   }
 }

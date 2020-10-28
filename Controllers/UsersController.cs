@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using Travel.Services;
-using Travel.Entities;
+using TravelAPI.Services;
+using TravelAPI.Models;
 
-namespace Travel.Controllers
+namespace TravelAPI.Controllers
 {
   [Authorize]
     [ApiController]
