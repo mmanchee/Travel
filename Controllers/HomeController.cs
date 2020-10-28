@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Travel.Models;
 
-namespace Library.Controllers
+namespace Travel.Controllers
 {
   public class HomeController : Controller
   {

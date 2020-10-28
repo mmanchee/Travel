@@ -61,7 +61,7 @@ As a user, I want to look up random destinations just for fun.
 * this dotnet run works with http://localhost:6000; http://localhost:6001
 ### Swagger
 * Type "dotnet watch run"
-* Paste URL in browser "http://localhost:5000/swagger/index.html"
+* Paste URL in browser "http://localhost:6000/swagger/index.html"
 * Explore API
 
 ## Known Bugs

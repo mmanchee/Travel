@@ -53,14 +53,13 @@ namespace Travel
       c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
       });
           // Shows UseCors with CorsPolicyBuilder.
-      app.UseCors(builder =>
-    {
-        builder.WithOrigins("http://example.com",
-                            "http://www.contoso.com",
-                            "https://localhost:6000",
-                            "https://localhost:6001");
+    //   app.UseCors(builder =>
+    // {
+    //     builder.WithOrigins("http://example.com",
+    //                         "http://www.contoso.com",
+    //                         "https://localhost:6000",
+    //                         "https://localhost:6001");
       app.UseMvc();
-    });
+    }
   }
-}
 }
