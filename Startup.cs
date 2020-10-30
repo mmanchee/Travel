@@ -31,7 +31,7 @@ namespace TravelAPI
       services.AddDbContext<TravelAPIContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-      
+
       var appSettingsSection = Configuration.GetSection("AppSettings");
       services.Configure<AppSettings>(appSettingsSection);
 
@@ -39,24 +39,27 @@ namespace TravelAPI
       var key = Encoding.ASCII.GetBytes(appSettings.Secret);
       services.AddAuthentication(x =>
         {
-            x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+          x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+          x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
         })
         .AddJwtBearer(x =>
         {
-            x.RequireHttpsMetadata = false;
-            x.SaveToken = true;
-            x.TokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
+          x.RequireHttpsMetadata = false;
+          x.SaveToken = true;
+          x.TokenValidationParameters = new TokenValidationParameters
+          {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false
+          };
         });
+      // configure DI for application services
+      services.AddScoped<IUserService, UserService>();
+
       services.AddSwaggerGen(c =>
       {
-      c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
       });
     }
 
@@ -70,18 +73,18 @@ namespace TravelAPI
       {
         app.UseHsts();
       }
-      
+
       app.UseSwagger();
       app.UseSwaggerUI(c =>
       {
-      c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
       });
-        // global cors policy
+      // global cors policy
       app.UseCors(x => x
           .AllowAnyOrigin()
           .AllowAnyMethod()
           .AllowAnyHeader());
-          
+
       app.UseAuthentication();
       app.UseMvc();
     }
